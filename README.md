@@ -24,7 +24,7 @@ Before running the app, ensure you have the following installed on your system:
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/jayvadwala/weather-app.git
 ```
 
 ### 2. Navigate the project directory:
