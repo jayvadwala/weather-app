@@ -40,7 +40,9 @@ Create .env file at root level and copy the below code:<br>
 npm start<br>
 App should run on: http://localhost:3000/ locally
 
+
 ### 5. Project Structure:
+```bash
 weather-app/
 │
 ├── public/                  # Public assets like index.html
@@ -55,3 +57,4 @@ weather-app/
 │   ├── styles/              # Global and component styles using styled-components
 ├── .env                     # API key configuration
 └── README.md                # App documentation
+```
