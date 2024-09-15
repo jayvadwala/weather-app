@@ -37,7 +37,8 @@ Create .env file at root level and copy the below code:<br>
 `REACT_APP_API_KEY=your_openweather_api_key`
 
 ### 4. Running the App:
-npm start
+npm start<br>
+App should run on: http://localhost:3000/ locally
 
 ### 5. Project Structure:
 weather-app/
