@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple weather forecasting app built using React and TypeScript. It allows users to select a city from a dropdown and displays the current weather and a 5-day forecast. The weather data is fetched from the OpenWeather API.
 
-## Available Scripts
+## Features
+- Select a city to view the current weather.
+- Display weather information such as temperature, wind speed, and weather description.
+- Click on "See Forecast" to view the 5-day weather forecast in a table format.
+- Date selector allows you to toggle between different forecast days.
+- Forecast table displays weather details with formatted date and time.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: Frontend library for building the user interface.
+- **TypeScript**: For static type-checking.
+- **Styled-components**: For writing CSS-in-JS styles.
+- **Axios**: To handle HTTP requests to the OpenWeather API.
 
-### `npm start`
+## Prerequisites
+Before running the app, ensure you have the following installed on your system:
+- **Node.js** (version >= 14.x.x)
+- **npm** (version >= 6.x.x) or **yarn**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/weather-app.git
+```
 
-### `npm test`
+### 2. Navigate the project directory:
+cd weather-app
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Set up environment variabes
+Create .env file at root level and copy the below code:
+`REACT_APP_API_KEY=your_openweather_api_key`
 
-### `npm run build`
+### 4. Running the App:
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 5. Project Structure:
+weather-app/
+│
+├── public/                  # Public assets like index.html
+├── src/                     # Source files
+│   ├── components/          # React components
+│   │   ├── CitySelect.tsx   # City selection dropdown
+│   │   ├── WeatherDetails.tsx # Displays current weather details
+│   │   ├── ForecastTable.tsx  # Displays the forecast table for the selected date
+│   ├── types/               # TypeScript types for weather and forecast data
+│   ├── App.tsx              # Main App component
+│   ├── index.tsx            # App entry point
+│   ├── styles/              # Global and component styles using styled-components
+├── .env                     # API key configuration
+└── README.md                # App documentation
