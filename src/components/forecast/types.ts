@@ -1,4 +1,3 @@
-// src/components/forecast/types.ts
 import { Main, Weather, Wind } from '../weather/types';
 
 export interface ForecastEntry {

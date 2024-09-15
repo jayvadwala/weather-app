@@ -1,4 +1,3 @@
-// src/components/weather/WeatherDetails.tsx
 import React from 'react';
 import styled from 'styled-components';
 import { WeatherData } from './types';
