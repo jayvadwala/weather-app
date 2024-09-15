@@ -29,10 +29,11 @@ git clone https://github.com/yourusername/weather-app.git
 
 ### 2. Navigate the project directory:
 cd weather-app
+<br>
 npm install
 
 ### 3. Set up environment variabes
-Create .env file at root level and copy the below code:
+Create .env file at root level and copy the below code:<br>
 `REACT_APP_API_KEY=your_openweather_api_key`
 
 ### 4. Running the App:
