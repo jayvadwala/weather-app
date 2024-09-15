@@ -45,16 +45,19 @@ App should run on: http://localhost:3000/ locally
 ```bash
 weather-app/
 │
-├── public/                  # Public assets like index.html
-├── src/                     # Source files
-│   ├── components/          # React components
-│   │   ├── CitySelect.tsx   # City selection dropdown
-│   │   ├── WeatherDetails.tsx # Displays current weather details
-│   │   ├── ForecastTable.tsx  # Displays the forecast table for the selected date
-│   ├── types/               # TypeScript types for weather and forecast data
-│   ├── App.tsx              # Main App component
-│   ├── index.tsx            # App entry point
-│   ├── styles/              # Global and component styles using styled-components
-├── .env                     # API key configuration
-└── README.md                # App documentation
+├── public/                         # Public assets like index.html
+├── src/                            # Source files
+│   ├── components/                 # React components
+│   │   ├── forecast/               # forecast folder 
+├──--      ├── ForecastTable.tsx    # Displays the forecast table for the selected date
+├──--      ├── types.ts             # Types for forecast data
+│   │   ├── weather/                # weather folder
+├──--   │   ├── WeatherDetails.tsx  # Displays current weather details
+├──--       ├── types.ts            # Types for weather data 
+│   │   ├── CitySelect.tsx          # City selection dropdown
+│   ├── App.tsx                     # Main App component
+│   ├── index.tsx                   # App entry point
+│   ├── styles/                     # Global and component styles using styled-components
+├── .env                            # API key configuration
+└── README.md                       # App documentation
 ```
